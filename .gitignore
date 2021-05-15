@@ -2,3 +2,4 @@
 venv
 .vscode
 infos.md
+storage.db
