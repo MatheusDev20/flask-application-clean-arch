@@ -3,3 +3,4 @@ venv
 .vscode
 infos.md
 storage.db
+.pytest_cache
