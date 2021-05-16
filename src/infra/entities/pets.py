@@ -25,6 +25,8 @@ class Pets(Base):
         return f"Pet: [name={self.name}, specie={self.specie}, user_id={self.user_id}"
 
     def __eq__(self, other):
+        print("this is other")
+        print(other)
         if (
             self.id == other.id
             and self.name == other.name
