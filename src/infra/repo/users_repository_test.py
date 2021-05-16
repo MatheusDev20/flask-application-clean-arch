@@ -1,7 +1,7 @@
 from faker import Faker
 from src.infra.config import DBConnectionHandler
-from .users_repository import UsersRepository
 from src.infra.entities import Users as UsersModel
+from .users_repository import UsersRepository
 
 
 faker = Faker()
