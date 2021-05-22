@@ -1,5 +1,5 @@
-from src.domain.models import Users
 from typing import List
+from src.domain.models import Users
 from src.domain.test.mock_user import mock_users
 
 

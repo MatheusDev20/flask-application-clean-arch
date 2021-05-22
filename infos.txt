@@ -1,0 +1,7 @@
+3 Tipos de métodos de classe no Python
+
+static definido com o decorator @staticmethod
+  -> Podem ser chamados sem instanciar a classe
+
+class methods definido com o decorator @classmethod
+  -> 
