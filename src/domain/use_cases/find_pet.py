@@ -13,7 +13,7 @@ class FindPet(ABC):
         raise Exception("This method should be implmenthed")
 
     @abstractclassmethod
-    def by_user_id(cls, pet_name: str) -> Dict[bool, List[Pets]]:
+    def by_user_id(cls, user_id: int) -> Dict[bool, List[Pets]]:
         """Specific case"""
         raise Exception("This method should be implementhed")
 

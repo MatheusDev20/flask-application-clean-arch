@@ -1,5 +1,5 @@
-from src.domain.models.pets import Pets
 from typing import List
+from src.domain.models.pets import Pets
 from src.domain.test import mock_pets
 
 
@@ -12,6 +12,7 @@ class PetsRepositorySpy:
         self.select_pets_params = {}
 
     def insert_pet(self, name: str, specie: str, age: int, user_id: int) -> Pets:
+        print("get into pet spy")
         """Spy Attributtes"""
         self.insert_pets_params["name"] = name
         self.insert_pets_params["specie"] = specie

@@ -20,7 +20,7 @@ class FindPet(FindPetInterface):
 
         return {"Success": validate, "Data": response}
 
-    def by_user_id(self, user_id: str) -> Dict[bool, List[Pets]]:
+    def by_user_id(self, user_id: int) -> Dict[bool, List[Pets]]:
         """Get pet by name"""
         response = None
         validate = isinstance(user_id, int)
