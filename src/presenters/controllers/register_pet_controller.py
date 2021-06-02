@@ -16,7 +16,6 @@ class RegisterPetController:
         response = None
         if http_request.body:
             body_params = http_request.body.keys()
-            print(body_params)
             if (
                 "name" in body_params
                 and "specie" in body_params
@@ -46,8 +45,6 @@ class RegisterPetController:
                 return HttpReponse(
                     status_code=http_error["status_code"], body=http_error["body"]
                 )
-
-            print("?")
             return HttpReponse(status_code=200, body=response["Data"])
         http_error = HttpErrors.error_400()
         return HttpReponse(
