@@ -8,7 +8,7 @@ from src.infra.entities import Users as UsersModel
 class UsersRepository(UserRepositoryInterface):
     """Repositório de usuários"""
 
-    @classmethod
+    @classmethod  # é um metodo da classe e não do objeto instanciado
     def insert_user(cls, name: str, password: str) -> Users:
         """Insert data in user tables
         :return - tuple with new user

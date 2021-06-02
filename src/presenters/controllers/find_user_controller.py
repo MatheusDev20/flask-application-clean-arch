@@ -11,7 +11,7 @@ class FindUserController:
         self.find_user_use_case = find_user_use_case
 
     def handle(self, http_request: Type[HttpRequest]) -> HttpReponse:
-        """Metjod to call use Case and Handle Request"""
+        """Method to call use Case and Handle Request"""
         response = None
 
         if http_request.query:
